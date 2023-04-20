@@ -1,16 +1,21 @@
-# first_app
+# Quiz App
+The attached files **DO NOT** work as a standalone project, they are just the code I wrote (lib folder) and pubspecs (dependencies).  
 
-A new Flutter project.
+To give the app a try:
+-  [Download the Flutter SDK and Android Studio](https://docs.flutter.dev/get-started/install).
+-  Run "flutter create" on the terminal, or open up the Command Palette (Ctrl + Shift + 'P') in VS Code and type "Flutter: New Project".
+-  Once it's done creating the new project, replace the lib folder and the pubspecs (pubspecs.yaml and pubspec.lock) with the ones I provide in this repo.
+-  Run the app **without debugging** on an Android Virtual Device (first of all you need to have an AVD up and running before running the app).
+-  That's it!
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+# Quiz App
+Los archivos adjuntados **NO** funcionan como un proyecto por si mismos, son solo el codigo que escribi (carpeta lib) y pubspecs (dependencias).
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Para probar la aplicacion:
+-  [Descarga el SDK de Flutter y Android Studio](https://docs.flutter.dev/get-started/install).
+-  Corre "flutter create" en la terminal, o abre la Command Palette (Ctrl + Shift + 'P') en VS Code y escribe "Flutter: New Project".
+-  Una vez que finalizo la creacion del nuevo proyecto, reemplaza la carpeta lib y pubspecs (pubspecs.yaml y pubspecs.lock) con las que yo proveo en este repositorio.
+-  Corre la aplicacion **sin depurar** en un Dispositivo Virtual de Android (primero que todo necesitas tener un DVA abierto y en funcionamiento antes de correr la app).
+-  Eso es todo!
