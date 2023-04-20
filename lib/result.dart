@@ -1,4 +1,3 @@
-// ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
@@ -28,7 +27,7 @@ class Result extends StatelessWidget {
             resultPhrase,
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           ),
-          FlatButton(
+          TextButton(
             child: Text('Reiniciar test'),
             onPressed: resetHandler,
           ),
