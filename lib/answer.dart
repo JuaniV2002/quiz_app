@@ -10,9 +10,21 @@ class Answer extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      child: ElevatedButton(
-        child: Text(answerText),
-        onPressed: selectHandler,
+      child: Container(
+        margin: const EdgeInsets.all(10.0), // Add margin here
+        child: ElevatedButton(
+          style: ButtonStyle(
+            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15),
+              ),
+            ),
+            backgroundColor: WidgetStateProperty.all<Color>(Colors.blue),
+            foregroundColor: WidgetStateProperty.all<Color>(Colors.white),
+          ),
+          child: Text(answerText),
+          onPressed: selectHandler,
+        ),
       ),
     );
   }

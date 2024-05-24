@@ -7,13 +7,13 @@ class Result extends StatelessWidget {
   const Result(this.resultScore, this.resetHandler, {Key? key}) : super(key: key);
 
   String get resultPhrase {
-    var resultText = 'No me conoces';
+    var resultText = 'No me conoces 😢';
     if (resultScore <= 8) {
-      resultText = 'Me conoces muy poco :(';
+      resultText = 'Me conoces muy poco 🙁';
     } else if (resultScore <= 12) {
-      resultText = 'Me conoces!';
+      resultText = 'Me conoces! 😐';
     } else if (resultScore >= 12) {
-      resultText = 'Me conoces muy bien :) !';
+      resultText = 'Me conoces muy bien 😃 !';
     }
     return resultText;
   }
@@ -22,14 +22,23 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             resultPhrase,
             style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           ),
-          TextButton(
-            child: const Text('Reiniciar test'),
-            onPressed: resetHandler,
+          Container(
+            margin: const EdgeInsets.only(top: 20.0), // Add top margin here
+            child: ElevatedButton.icon(
+              icon: const Icon(Icons.refresh), // Your icon
+              label: const Text('Reiniciar test'),
+              onPressed: resetHandler,
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.all<Color>(Colors.blue),
+                foregroundColor: WidgetStateProperty.all<Color>(Colors.white),
+              ),
+            ),
           ),
         ],
       ),
