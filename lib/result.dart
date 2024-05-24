@@ -26,7 +26,7 @@ class Result extends StatelessWidget {
         children: [
           Text(
             resultPhrase,
-            style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
           Container(
             margin: const EdgeInsets.only(top: 20.0), // Add top margin here
