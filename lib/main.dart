@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import './quiz.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
