@@ -8,13 +8,13 @@ class Result extends StatelessWidget {
       : super(key: key);
 
   String get resultPhrase {
-    var resultText = 'No me conoces 😢';
+    var resultText = 'Andá a estudiar! 😂';
     if (resultScore <= 8) {
-      resultText = 'Me conoces muy poco 🙁';
+      resultText = 'Algo sabes 😕';
     } else if (resultScore <= 12) {
-      resultText = 'Me conoces! 😐';
+      resultText = 'Bien! 😃';
     } else if (resultScore >= 12) {
-      resultText = 'Me conoces muy bien 😃 !';
+      resultText = 'Sos un genio! 🤓';
     }
     return resultText;
   }

@@ -1,7 +1,7 @@
-import 'package:first_app/result.dart';
+import '../result.dart';
 import 'package:flutter/cupertino.dart';
 
-import './quiz.dart';
+import 'quiz.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,30 +19,30 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final _questions = const [
     {
-      'questionText': 'Cuál es mi apodo?',
+      'questionText': 'Que significa ARM en referencia a microprocesadores?',
       'answers': [
-        {'text': 'Juan', 'score': 5},
-        {'text': 'Juani', 'score': 10},
-        {'text': 'Juancito', 'score': 3},
-        {'text': 'John', 'score': 1}
+        {'text': 'Astro Roaming Module', 'score': 5},
+        {'text': 'Acorn Risc Machines', 'score': 10},
+        {'text': 'Amp Resource Manifest', 'score': 3},
+        {'text': 'Brazo', 'score': 1}
       ],
     },
     {
-      'questionText': 'Qué estoy estudiando?',
+      'questionText': 'Que arquitectura utiliza los procesadores RISC',
       'answers': [
-        {'text': 'Computación', 'score': 10},
-        {'text': 'Biología', 'score': 5},
-        {'text': 'Administración', 'score': 3},
-        {'text': 'Nada', 'score': 0}
+        {'text': 'x86', 'score': 10},
+        {'text': 'PowerPC', 'score': 5},
+        {'text': 'ARM', 'score': 3},
+        {'text': 'Nvidia', 'score': 0}
       ],
     },
     {
-      'questionText': 'Cuál es el apodo preferido de mi novia?',
+      'questionText': 'Que significa TOPS en referencia a microprocesadores?',
       'answers': [
-        {'text': 'Belu', 'score': 0},
-        {'text': 'Belen', 'score': 3},
-        {'text': 'Belencita', 'score': 10},
-        {'text': 'Beli', 'score': 5}
+        {'text': 'Trillions of Operations per Second', 'score': 10},
+        {'text': 'Tera Operations per Second', 'score': 5},
+        {'text': 'Teraflops Operations per Second', 'score': 3},
+        {'text': 'Tri Opsi Per Second', 'score': 1}
       ],
     },
   ];
@@ -78,7 +78,7 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: const Color.fromARGB(255, 107, 156, 198),
         navigationBar: const CupertinoNavigationBar(
           middle: Text(
-            'Cuánto conoces a Juani?',
+            'Cuánto sabes de computadoras?',
             style: TextStyle(
               fontSize: 20,
             ),

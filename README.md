@@ -1,5 +1,23 @@
-# Quiz App
-The attached files **DO NOT** work as a standalone project, they are just the code I wrote (lib folder) and pubspecs (dependencies).
+# Quiz app
+
+This flutter app will test yor knowledge on computer-related topics, and show you a message based on your answers.
+
+## Screenshots
+
+<table>
+    <tr>
+        <td>
+            <img src="/assets/question.png" width="300">
+        </td>
+        <td>
+            <img src="/assets/result.png" width="300">
+        </td>
+    </tr>
+</table>
+
+## Try my app!
+
+The attached files **DO NOT** work as a standalone project, they are just the code I wrote (lib folder), pubspecs (dependencies) and assets (font to add style to the app).  
 
 To give the app a try:
 -  [Download the Flutter SDK and Android Studio or Xcode](https://docs.flutter.dev/get-started/install).
@@ -8,16 +26,3 @@ To give the app a try:
 -  Run `flutter create .` in the terminal. (this will create all the app dependencies).
 -  Run `flutter run`. The virtual device will open the app automatically.
 -  That's it!
-
----
-
-# Quiz app
-Los archivos adjuntos **NO** funcionan como un proyecto por sí mismos, son sólo el código que escribí (carpeta lib) y pubspecs (dependencias).
-
-Para probar la aplicación:
--  [Descarga el SDK de Flutter y Android Studio o Xcode](https://docs.flutter.dev/get-started/install).
--  Inicia un dispositivo virtual en Android Studio o Xcode.
--  Clona mi repositorio y muévete a esa ubicación en tu terminal.
--  Ejecuta `flutter create .` en la terminal (esto creará todas las dependencias de la app).
--  Ejecuta `flutter run`. El dispositivo virtual abrirá la aplicación automáticamente.
--  ¡Eso es todo!
